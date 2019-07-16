@@ -1,0 +1,11 @@
+<p>Visor de imagenes</p>
+
+<div *ngFor="let imagen of imagenes">
+    <img [src]="imagen.img" alt="">
+    <p>nombre: {{imagen.name}}</p>
+    <p>descripcion: {{imagen.description}}</p>
+    <p>ranking: {{imagen.ranking}}</p>
+    <div style="display: inline-block; width: 20px;" *ngFor="let r of imagen.rank">
+        <i class="material-icons">star_rate</i>
+    </div>
+</div>
